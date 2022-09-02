@@ -1,0 +1,198 @@
+.profileContainer{
+    border:2px solid Black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    max-width: 100%;
+    background-color: white;
+}
+
+.profileContainer > div {
+
+    border: 2px dotted rgb(17, 0, 255);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vmax;
+
+}
+
+.profileContainer >div:nth-child(1) > h1{
+    color: rgba(0,0,0,.555);
+    border: 2px solid green;
+    width: 65%;
+    text-align: right;
+    transform: translateX(-10vmax) translateY(-2vmax);
+
+}
+
+.profileContainer >div:first-child >div{
+    width:35%;
+    /* border: 1px solid greenyellow; */
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2vmax;
+    box-shadow: 0 0 5px rgb(181, 179, 179);
+    transition: all .1s;
+ 
+ 
+}
+
+
+.profileContainer >div:first-child >div:hover{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px 0px 10px 0px;
+    /*tilt.js use Karege i.e. react-titlt*/
+}
+
+.Tilt>div >img{
+
+    border-radius: 0 10px 0 10px;
+    width: 80%;
+    
+}
+
+
+
+.profileContainer >div:first-child >a{
+    border: none;
+    background-color: tomato;
+    font: 400 1vmax 'Roboto';
+    color: white;
+    text-decoration: none;
+    padding: 0.5vmax;
+    width: 30%;
+    margin: 4vmax;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.profileContainer >div:first-child >a:hover{
+    background-color: #e02200;
+
+}
+
+.profileContainer >div:last-child{
+    box-sizing: border-box;
+    border: 2px solid yellow;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.profileContainer >div:last-child>div{
+    border: 2px solid blue;
+    padding: 3vmax 0vmax;
+    width: 100%;
+
+}
+
+.profileContainer >div:last-child>div>h4{
+    color: black;
+    font: 400 1.2vmax 'Roboto';
+
+}
+
+
+.profileContainer >div:last-child>div>p{
+
+    color: rgba(0,0,0,.418);
+    font: 400 1vmax cursive;
+    margin: 0.2vmax;
+}
+
+.profileContainer>div:last-child>div:last-child{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.profileContainer>div:last-child>div:last-child>a{
+
+
+    border: none;
+    background-color: rgb(68,68,68);
+    font: 400 1vmax 'Roboto';
+    color: white;
+    text-decoration: none;
+    padding: .5vmax;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 1vmax 0vmax;
+
+}
+.profileContainer>div:last-child>div:last-child>a:hover{
+    background-color: rgba(31,31,31);
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .profileContainer{
+    
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .profileContainer >div:first-child >div{
+        width:25%;
+        margin-top: 2vmax;
+    }
+
+
+    .Tilt>div >img{
+        width: 60%;
+        padding: 0;
+        margin: 1vmax 0vmax;
+    }
+   
+    
+.profileContainer >div:first-child >a{
+    border: none;
+    background-color: tomato;
+    font: 400 2vmax 'Roboto';
+    color: white;
+    text-decoration: none;
+    padding: 0.5vmax;
+    width: 30%;
+    margin: 4vmax;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+    .profileContainer >div:last-child>div{
+        text-align: center;
+    }
+    
+    .profileContainer >div:last-child>div>h4{
+      font: 400 2.5vmax 'Roboto';
+    }
+
+    .profileContainer >div:last-child>div>p{
+       
+        font: 400 2vmax cursive;
+        margin: .5vmax 0;
+    }
+
+    .profileContainer >div:last-child>div:last-child{
+        width: 100%;
+    }
+
+    .profileContainer >div:last-child>div:last-child>a{
+        font: 400 1.8vmax 'Roboto';
+        padding: 1vmax;
+        margin: 2vmax 0;
+        width: 50%;
+        margin: 1vmax auto;
+    }
+    
+}

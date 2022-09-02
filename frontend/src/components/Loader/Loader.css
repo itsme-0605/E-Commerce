@@ -1,0 +1,40 @@
+.Loading_Class{
+    border:2px solid black;
+    width:100vw;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+
+.Loading_Class > div {
+    width:10vmax;
+    border-bottom:5px solid rgb(110,110, 110);
+    height: 10vmax;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    animation: LoadingMotion 1s linear infinite   ;
+}
+
+@keyframes LoadingMotion {
+    
+    to{
+        transform:rotate(-360deg)
+    }
+}
+
+.Loading_Class > div > h1{
+    font-size: 1.3vmax;
+    animation: LoadingMotionCounter 1s linear infinite;
+}
+
+@keyframes LoadingMotionCounter {
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}

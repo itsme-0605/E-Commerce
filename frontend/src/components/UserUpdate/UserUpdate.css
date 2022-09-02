@@ -1,0 +1,116 @@
+.UserUpdateContainer{
+    width:100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    border: 2px solid red;;
+
+}
+
+.UserUpdateBox{
+    border: 2px solid rgb(80,80,80);
+    background-color: white;
+    width:25vw;
+    height: 70vh;
+    box-sizing: border-box;
+   
+}
+
+.UPDATE_Form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 0 2vmax;
+    justify-content: space-evenly;
+    height: 100%;
+    transition: all 0.5s;
+    border: 2px solid yellow;
+}
+
+.UPDATE_Form>h1{
+    font: 500 2.3vmax 'Quantico';
+}
+
+.UPDATE_Form>div{
+    display: flex;
+    border: 2px solid violet;
+    width: 100%;
+    align-items: center;
+}
+
+.UPDATE_Form > div >input{
+    padding: 1vmax 3vmax 1vmax 4vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+}
+
+
+.UPDATE_Form > div>svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0,0,0,.617);
+ }
+ 
+ 
+ .UPDATE_Form > input{
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.8vmax 'Roboto';
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.267);
+
+
+ }
+
+ .UPDATE_Form > input:hover{
+    background-color: rgb(224, 34, 0);
+ }
+
+
+ @media screen and (max-width:600px) {
+
+    .UserUpdateBox{
+    width:100vw;
+    height: 85vh;
+   
+    }
+
+    .UPDATE_Form{
+        padding: 5vmax;
+    }
+
+    .UPDATE_Form>h1{
+        font: 400 5vmax 'Quantico';
+    }
+
+    .UPDATE_Form > div >input{
+        padding: 2.5vmax 10vmax 2.5vmax 6vmax;
+        font: 300 2vmax cursive;
+       }
+
+    .UPDATE_Form > div >svg{
+        font-size: 4vmax;
+        
+    }
+
+    .UPDATE_Form>input{
+        padding: 4vmax;
+        font: 500 2.5vmax 'Roboto';
+    }
+    
+ }

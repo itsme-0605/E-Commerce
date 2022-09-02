@@ -1,0 +1,61 @@
+.General_Icon_Bar{
+    border: 2px solid red;
+    position: fixed;
+    width: 100%;;
+
+}
+
+.General_Icon_Bar ul{
+    
+    /* border-top: 2px solid black; */
+    
+    /* border-bottom: 2px solid black; */
+
+    border-radius: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 1vmax;
+    top: 2.6vmax;
+
+
+}
+
+.General_Icon_Bar >ul> a>li{
+
+    /* border: 2px solid yellow; */
+    float: left;
+    padding:.5vmax 2vmax;
+    margin: .5vmax .1vmax;
+    font: 400 1.5vmax "Quantico";
+    transition: all 0.5s;
+ 
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.General_Icon_Bar ul a>li:hover{
+    /* background-color: #000000b2; */
+    box-shadow: 0 0 5px white;
+    border-radius: 70px;
+    cursor: pointer;
+    /* color:red; */
+    transform: scale(1.1);
+}
+
+
+
+/* Hover Options of Authenticated Logged In User */
+
+
+.SpeedDialIcon{
+    width:56px;
+    height: 56px;
+    border-radius: 100px;
+    /* border: 2px solid black; */
+}
